@@ -1,30 +1,33 @@
 package test.util;
 
-import org.junit.Assert;
 import org.junit.Test;
-import rpn.util.StringUtil;
-import rpn.stack.RpnStack;
 
-import junit.framework.TestCase;
+import rpn.util.StringUtil;
+
+import java.util.Stack;
 
 public class StringUtilTest {
-    @org.junit.Test
+    @Test
     public void spiltBySpace() {
-        String[] result = {"a", "b", "c", "d"};
-        // Assert.assertEquals(result, StringUtil.spiltBySpace("a b c d"));
-        TestCase.assertEquals(result, StringUtil.spiltBySpace("a b c d"));
+        String[] result = StringUtil.spiltBySpace("a b c d");
+        for (String s : result) {
+            System.out.println(s);
+        }
     }
 
     @Test
-    public void go() {
-        TestCase.assertEquals(1, StringUtil.go());
+    public void handleClear() {
+        System.out.println(StringUtil.handleClear("123 clear test"));
     }
 
     @Test
-    public void tt() {
-        RpnStack rpnStack = RpnStack.getInstance();
-        rpnStack.push("+");
-        rpnStack = RpnStack.getInstance();
-        System.out.println(rpnStack.getStack());
+    public void test() {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(1);
+        stack.push(2);
+        System.out.println(stack);
+
+        stack.remove(0);
+        System.out.println(stack);
     }
 }

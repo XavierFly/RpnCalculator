@@ -4,13 +4,14 @@ import java.util.Stack;
 
 public class RpnStack {
     private static RpnStack rpnStack = null;
-    private Stack<String> stack = new Stack<>();
+    private Stack<String> stack;
 
     private RpnStack() {}
 
     public static RpnStack getInstance() {
         if (rpnStack == null) {
             rpnStack = new RpnStack();
+            rpnStack.setStack();
         }
         return rpnStack;
     }
@@ -19,8 +20,14 @@ public class RpnStack {
         stack.push(string);
     }
 
-    public void pop() {
-        stack.pop();
+    public String pop() {
+        return stack.pop();
+    }
+
+    public String peek() {return stack.peek();}
+
+    private void setStack() {
+        this.stack = new Stack<>();
     }
 
     public Stack<String> getStack() {
