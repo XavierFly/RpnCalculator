@@ -21,7 +21,12 @@ public class RpnStack {
     }
 
     public String pop() {
-        return stack.pop();
+        try {
+            return stack.pop();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "";
     }
 
     public String peek() {return stack.peek();}

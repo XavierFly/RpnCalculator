@@ -5,8 +5,6 @@ import java.util.Stack;
 public class RpnCacheStack {
     private static RpnCacheStack rpnCacheStack = null;
     private Stack<String> stack;
-    private boolean isLastOperator;
-    private String test;
 
     private RpnCacheStack() {}
 
@@ -20,13 +18,14 @@ public class RpnCacheStack {
 
     public void push(String string) {
         stack.push(string);
-        if (stack.size() > 2) {
-            stack.remove(0);
-        }
     }
 
     public String pop() {
         return stack.pop();
+    }
+
+    public String peek() {
+        return stack.peek();
     }
 
     private void setStack() {
@@ -35,21 +34,5 @@ public class RpnCacheStack {
 
     public Stack<String> getStack() {
         return stack;
-    }
-
-    public boolean isLastOperator() {
-        return isLastOperator;
-    }
-
-    public void setLastOperator(boolean lastOperator) {
-        isLastOperator = lastOperator;
-    }
-
-    public String getTest() {
-        return test;
-    }
-
-    public void setTest(String test) {
-        this.test = test;
     }
 }
