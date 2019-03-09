@@ -2,37 +2,42 @@ package rpn.stack;
 
 import java.util.Stack;
 
+import rpn.properties.CommonConfiguration;
+
 public class RpnCacheStack {
     private static RpnCacheStack rpnCacheStack = null;
-    private Stack<String> stack;
+    private static Stack<String> cacheStack = null;
 
     private RpnCacheStack() {}
 
     public static RpnCacheStack getInstance() {
         if (rpnCacheStack == null) {
             rpnCacheStack = new RpnCacheStack();
-            rpnCacheStack.setStack();
+            cacheStack = new Stack<>();
         }
         return rpnCacheStack;
     }
 
-    public void push(String string) {
-        stack.push(string);
+    public String cacheStackPop() {
+        return cacheStack.pop();
     }
 
-    public String pop() {
-        return stack.pop();
+    public String cacheStackPeek() {
+        return cacheStack.peek();
     }
 
-    public String peek() {
-        return stack.peek();
-    }
-
-    private void setStack() {
-        this.stack = new Stack<>();
+    public int cacheStackSize() {
+        return cacheStack.size();
     }
 
     public Stack<String> getStack() {
-        return stack;
+        return cacheStack;
+    }
+
+    public void cacheStackLimitPush(String item) {
+        if (cacheStack.size() >= CommonConfiguration.getUndoMaxTimes()) {
+            cacheStack.remove(0);
+        }
+        cacheStack.push(item);
     }
 }

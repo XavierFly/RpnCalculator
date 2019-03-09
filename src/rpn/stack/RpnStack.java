@@ -1,41 +1,40 @@
 package rpn.stack;
 
+import rpn.util.StringUtil;
+
 import java.util.Stack;
 
 public class RpnStack {
     private static RpnStack rpnStack = null;
-    private Stack<String> stack;
+    private static Stack<String> stack = null;
 
     private RpnStack() {}
 
     public static RpnStack getInstance() {
         if (rpnStack == null) {
             rpnStack = new RpnStack();
-            rpnStack.setStack();
+            stack = new Stack<>();
         }
         return rpnStack;
     }
 
-    public void push(String string) {
-        stack.push(string);
+    public void stackPush(String item) {
+        stack.push(item);
     }
 
-    public String pop() {
-        try {
-            return stack.pop();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return "";
+    public String stackPop() {
+        return stack.pop();
     }
 
-    public String peek() {return stack.peek();}
-
-    private void setStack() {
-        this.stack = new Stack<>();
+    public void stackRemoveAll() {
+        stack.removeAllElements();
     }
 
-    public Stack<String> getStack() {
-        return stack;
+    public String getStackString() {
+        return StringUtil.handleStackString(stack.toString());
+    }
+
+    public String getStackShowString() {
+        return StringUtil.handleStackShowString(stack);
     }
 }

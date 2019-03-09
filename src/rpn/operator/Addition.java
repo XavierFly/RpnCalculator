@@ -1,12 +1,11 @@
 package rpn.operator;
 
-public class Addition implements Operator {
+public class Addition extends Operator {
     @Override
     public void handle() {
-        double a = Double.valueOf(rpnStack.pop());
-        double b = Double.valueOf(rpnStack.pop());
-        double result = b + a;
-        rpnCacheStack.push("result_" + result);
-        rpnStack.push(String.valueOf(result));
+        getTwoNumber();
+        double result = secondNumber + firstNumber;
+        rpnStack.stackPush(String.valueOf(result));
+        rpnCacheStack.cacheStackLimitPush(rpnStack.getStackString());
     }
 }

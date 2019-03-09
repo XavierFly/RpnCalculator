@@ -1,11 +1,16 @@
 package rpn.operator;
 
-public class SquareRoot implements Operator {
+import rpn.properties.CommonConfiguration;
+
+import java.math.BigDecimal;
+
+public class SquareRoot extends Operator {
     @Override
     public void handle() {
-        double a = Double.valueOf(rpnStack.pop());
-        double result = Math.sqrt(a);
-        rpnCacheStack.push("result_" + result);
-        rpnStack.push(String.valueOf(result));
+        getOneNumber();
+        BigDecimal bigDecimal = new BigDecimal(Math.sqrt(firstNumber));
+        String result = bigDecimal.setScale(CommonConfiguration.getCalculatorAccuracy(), BigDecimal.ROUND_HALF_UP).toString();
+        rpnStack.stackPush(result);
+        rpnCacheStack.cacheStackLimitPush(rpnStack.getStackString());
     }
 }

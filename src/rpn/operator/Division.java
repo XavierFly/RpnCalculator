@@ -1,12 +1,16 @@
 package rpn.operator;
 
-public class Division implements Operator {
+import rpn.properties.CommonConfiguration;
+
+import java.math.BigDecimal;
+
+public class Division extends Operator {
     @Override
     public void handle() {
-        double a = Double.valueOf(rpnStack.pop());
-        double b = Double.valueOf(rpnStack.pop());
-        double result = b / a;
-        rpnCacheStack.push("result_" + result);
-        rpnStack.push(String.valueOf(result));
+        getTwoNumber();
+        BigDecimal bigDecimal = new BigDecimal(secondNumber / firstNumber);
+        String result = bigDecimal.setScale(CommonConfiguration.getCalculatorAccuracy(), BigDecimal.ROUND_HALF_UP).toString();
+        rpnStack.stackPush(result);
+        rpnCacheStack.cacheStackLimitPush(rpnStack.getStackString());
     }
 }

@@ -1,8 +1,9 @@
 package rpn.operator;
 
-public class Clear implements Operator {
+public class Clear extends Operator {
     @Override
     public void handle() {
-        rpnStack.getStack().removeAllElements();
+        rpnStack.stackRemoveAll();
+        rpnCacheStack.cacheStackLimitPush("");
     }
 }
