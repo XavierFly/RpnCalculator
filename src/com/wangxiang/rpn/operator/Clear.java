@@ -1,8 +1,11 @@
-package rpn.operator;
+package com.wangxiang.rpn.operator;
 
+/**
+ * 清空
+ */
 public class Clear extends Operator {
     @Override
-    public void handle() {
+    public void operate() {
         rpnStack.stackRemoveAll();
         rpnCacheStack.cacheStackLimitPush("");
     }

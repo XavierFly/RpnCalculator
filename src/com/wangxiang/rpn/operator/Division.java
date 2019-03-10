@@ -1,15 +1,18 @@
-package rpn.operator;
-
-import rpn.properties.CommonConfiguration;
+package com.wangxiang.rpn.operator;
 
 import java.math.BigDecimal;
 
+import com.wangxiang.rpn.exception.CommonException;
+
+/**
+ * 除法
+ */
 public class Division extends Operator {
     @Override
-    public void handle() {
+    public void operate() throws CommonException {
         getTwoNumber();
         BigDecimal bigDecimal = new BigDecimal(secondNumber / firstNumber);
-        String result = bigDecimal.setScale(CommonConfiguration.getCalculatorAccuracy(), BigDecimal.ROUND_HALF_UP).toString();
+        String result = bigDecimal.setScale(calculatorAccuracy, BigDecimal.ROUND_HALF_UP).toString();
         rpnStack.stackPush(result);
         rpnCacheStack.cacheStackLimitPush(rpnStack.getStackString());
     }
