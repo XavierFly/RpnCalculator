@@ -23,12 +23,15 @@ public class Calculator {
     private static String faultItem = null;    // 出错的项
 
     private static final String inputSeparator = CommonConfiguration.getInputSeparator();    // 输入分隔符
+    private static int inputSeparatorLength = inputSeparator.replace("\\", "").length() + 1;    // 输入分隔符长度
     private static final String lineSeparator = CommonConfiguration.getLineSeparator();    // 系统换行符
 
     /**
      * 命令行输入数字及操作符
      */
     public static void inputItem() {
+        System.out.println("Let's go." + lineSeparator);
+
         while (scanner.hasNext()) {
             String itemString = scanner.nextLine();
 
@@ -64,7 +67,7 @@ public class Calculator {
                 break;
             }
 
-            count += 2;
+            count += inputSeparatorLength;
 
             // 数字与操作符分开处理
             if (OperatorClassNameConfiguration.getProperties(item) != null) {
@@ -108,7 +111,7 @@ public class Calculator {
             System.out.println(new CommonException("E002").getMessage());
         } catch (CommonException e) {
             faultItem = item;
-            count -= 2;
+            count -= inputSeparatorLength;
         }
     }
 

@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfa44e11-9191-48cb-9383-4f3b1f7162eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/calculator/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/exception/CommonException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/operator/Addition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/operator/Multiplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/operator/Operator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/operator/Subtraction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/stack/RpnStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration/Common.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/Common.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpn/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpn/exception/CommonException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpn/operator/Addition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpn/operator/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/operator/Clear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpn/operator/Division.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/operator/Division.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpn/operator/Multiplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpn/operator/Operator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpn/operator/SquareRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/operator/SquareRoot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpn/operator/Subtraction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpn/operator/Undo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/operator/Undo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpn/properties/CommonConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/properties/CommonConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpn/properties/OperatorClassNameConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/properties/OperatorClassNameConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpn/stack/RpnCacheStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/stack/RpnCacheStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpn/stack/RpnStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rpn/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/util/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/util/StringUtilTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wangxiang/rpn/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wangxiang/rpn/calculator/Calculator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/wangxiang/rpn/calculator/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+            <state relative-caret-position="74">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,8 +102,8 @@
         <option value="$PROJECT_DIR$/src/rpn/com/wang/operator/Operator.java" />
         <option value="$PROJECT_DIR$/src/rpn/com/wang/Main.java" />
         <option value="$PROJECT_DIR$/src/com/wangxiang/rpn/exception/CommonException.java" />
-        <option value="$PROJECT_DIR$/configuration/Common.properties" />
         <option value="$PROJECT_DIR$/src/com/wangxiang/rpn/util/StringUtil.java" />
+        <option value="$PROJECT_DIR$/configuration/Common.properties" />
         <option value="$PROJECT_DIR$/src/com/wangxiang/rpn/calculator/Calculator.java" />
       </list>
     </option>
@@ -239,7 +216,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552235770704" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552237481589" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -309,7 +286,7 @@
       <updated>1551881875964</updated>
       <workItem from="1551881877258" duration="612000" />
       <workItem from="1552120266728" duration="20728000" />
-      <workItem from="1552209863961" duration="15721000" />
+      <workItem from="1552209863961" duration="17431000" />
     </task>
     <servers />
   </component>
@@ -328,7 +305,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37061000" />
+    <option name="totallyTimeSpent" value="38771000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -534,13 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configuration/Common.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangxiang/rpn/util/StringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -561,10 +531,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/configuration/Common.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wangxiang/rpn/calculator/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+        <state relative-caret-position="74">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
